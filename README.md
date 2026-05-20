@@ -1,4 +1,4 @@
-# 🌎 Educação Financeira e Ativos Internacionais
+# Educação Financeira e Ativos Internacionais
 
 Projeto desenvolvido com foco em **letramento financeiro para o público jovem**, abordando conceitos de organização financeira, investimentos básicos e introdução a ativos internacionais.
 
