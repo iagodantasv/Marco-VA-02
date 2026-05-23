@@ -1,54 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educação financeira</title>
+    <title>FinEdu — Educação Financeira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/card.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            Finance<span>Educação</span>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Fin<span>Edu</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="pages/organizacao-financeira.html">Organização</a></li>
+            <li><a href="pages/investimentos.html">Investimentos</a></li>
+            <li><a href="pages/ativos-internacionais.html">Ativos Int.</a></li>
+            <li><a href="pages/comparativos.html">Comparativos</a></li>
+        </ul>
+        <button class="nav-cta">Começar agora</button>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <!-- Fundo com partículas/grade -->
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
         </div>
-        <nav class="navbar">
-            <a href="index.html">Home |</a>
-            <a href="pages/organizacao-financeira.html">
-                Organização Financeira |
+
+        <!-- Coluna esquerda -->
+        <div class="hero-left">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                Plataforma de Educação Financeira
+            </div>
+
+            <h1 class="hero-title">
+                Seu Futuro<br>
+                <span class="hero-title-accent">Financeiro</span><br>
+                Começa Aqui
+            </h1>
+
+            <p class="hero-sub">
+                Aprenda a investir, organizar e multiplicar seu patrimônio com conteúdo claro e prático para todos os níveis.
+            </p>
+
+            <div class="hero-actions">
+                <a href="pages/investimentos.html" class="btn-primary">Explorar conteúdo</a>
+                <a href="pages/comparativos.html" class="btn-ghost">Ver comparativos →</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">10m+</span>
+                    <span class="stat-label">Transações analisadas</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Retorno de aprendizado</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">24k+</span>
+                    <span class="stat-label">Estudantes ativos</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coluna direita: cards flutuantes -->
+        <div class="hero-right">
+
+            <div class="float-card card-portfolio">
+                <div class="card-header">
+                    <span class="card-label">Portfólio</span>
+                    <span class="card-badge up">▲ 18,3%</span>
+                </div>
+                <div class="card-value">R$ 32.400</div>
+                <div class="mini-chart">
+                    <svg viewBox="0 0 120 40" preserveAspectRatio="none">
+                        <polyline points="0,35 20,28 40,30 60,15 80,18 100,8 120,5"
+                            fill="none" stroke="#1DB954" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <polyline points="0,35 20,28 40,30 60,15 80,18 100,8 120,5 120,40 0,40"
+                            fill="url(#greenFade)" stroke="none"/>
+                        <defs>
+                            <linearGradient id="greenFade" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#1DB954" stop-opacity="0.35"/>
+                                <stop offset="100%" stop-color="#1DB954" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="float-card card-asset">
+                <div class="card-header">
+                    <span class="card-label">Ativos</span>
+                    <span class="card-label-right">Distribuição</span>
+                </div>
+                <div class="asset-list">
+                    <div class="asset-row">
+                        <div class="asset-bar-wrap">
+                            <span class="asset-name">Ações BR</span>
+                            <div class="asset-bar"><div class="asset-fill" style="width:65%;background:#1DB954"></div></div>
+                            <span class="asset-pct">65%</span>
+                        </div>
+                    </div>
+                    <div class="asset-row">
+                        <div class="asset-bar-wrap">
+                            <span class="asset-name">FIIs</span>
+                            <div class="asset-bar"><div class="asset-fill" style="width:20%;background:#14a146"></div></div>
+                            <span class="asset-pct">20%</span>
+                        </div>
+                    </div>
+                    <div class="asset-row">
+                        <div class="asset-bar-wrap">
+                            <span class="asset-name">Int'l</span>
+                            <div class="asset-bar"><div class="asset-fill" style="width:15%;background:#0d7a34"></div></div>
+                            <span class="asset-pct">15%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="float-card card-goal">
+                <div class="card-header">
+                    <span class="card-label">Meta do mês</span>
+                    <span class="card-badge up">▲ 12,7%</span>
+                </div>
+                <div class="goal-ring-wrap">
+                    <svg class="goal-ring" viewBox="0 0 80 80">
+                        <circle cx="40" cy="40" r="32" fill="none" stroke="#1a2a1e" stroke-width="8"/>
+                        <circle cx="40" cy="40" r="32" fill="none" stroke="#1DB954" stroke-width="8"
+                            stroke-dasharray="151" stroke-dashoffset="38"
+                            stroke-linecap="round" transform="rotate(-90 40 40)"/>
+                    </svg>
+                    <div class="goal-ring-text">
+                        <span class="goal-pct">75%</span>
+                    </div>
+                </div>
+                <div class="goal-info">
+                    <span class="goal-curr">R$ 7.500</span>
+                    <span class="goal-sep">/</span>
+                    <span class="goal-total">R$ 10.000</span>
+                </div>
+            </div>
+
+            <div class="float-card card-typewriter">
+                <div class="card-label">FinEdu diz:</div>
+                <p class="typing-line"><span id="typewriter"></span></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE TÓPICOS -->
+    <section class="topics">
+        <h2 class="section-title">O que você vai aprender</h2>
+        <p class="section-sub">Conteúdo organizado do básico ao avançado</p>
+
+        <div class="topics-grid">
+            <a href="pages/organizacao-financeira.html" class="topic-card">
+                <div class="topic-icon">💰</div>
+                <h3>Organização Financeira</h3>
+                <p>Controle gastos, crie reservas e monte seu orçamento pessoal.</p>
+                <span class="topic-link">Acessar →</span>
             </a>
-
-            <a href="pages/investimentos.html">
-                Investimentos |
+            <a href="pages/investimentos.html" class="topic-card">
+                <div class="topic-icon">📈</div>
+                <h3>Investimentos</h3>
+                <p>Renda fixa, variável, Tesouro Direto, FIIs e muito mais.</p>
+                <span class="topic-link">Acessar →</span>
             </a>
-
-            <a href="pages/ativos-internacionais.html">
-                Ativos Internacionais |
+            <a href="pages/ativos-internacionais.html" class="topic-card">
+                <div class="topic-icon">🌎</div>
+                <h3>Ativos Internacionais</h3>
+                <p>ETFs, stocks americanas, BDRs e diversificação global.</p>
+                <span class="topic-link">Acessar →</span>
             </a>
-
-            <a href="pages/comparativos.html">
-                Comparativos |
+            <a href="pages/comparativos.html" class="topic-card">
+                <div class="topic-icon">⚖️</div>
+                <h3>Comparativos</h3>
+                <p>Compare produtos financeiros e tome melhores decisões.</p>
+                <span class="topic-link">Acessar →</span>
             </a>
-        </nav>
+        </div>
+    </section>
 
-    </header>
-    <main>
-
-    </main>
-    <footer>
-        <p>
-            © 2026 FinanceEdu | Projeto de Educação Financeira
-        </p>
-        <h3>
-            criado por:
-        </h3>
-        <u>
-            <li>Iago</li>
-            <li>Thiago</li>
-            <li>Kaue</li>
-            <li>Felipe</li>
-            <li>Renato</li>
-        </u>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo">Fin<span>Edu</span></span>
+                <p>© 2026 FinanceEdu · Projeto de Educação Financeira</p>
+            </div>
+            <div class="footer-team">
+                <span class="footer-team-label">Criado por</span>
+                <div class="footer-avatars">
+                    <span>Iago</span>
+                    <span>Thiago</span>
+                    <span>Kaue</span>
+                    <span>Felipe</span>
+                    <span>Renato</span>
+                </div>
+            </div>
+        </div>
     </footer>
+
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>
