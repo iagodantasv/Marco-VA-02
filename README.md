@@ -136,9 +136,9 @@ Este projeto permitiu desenvolver habilidades em:
 - GitHub: https://github.com/Renatofsds16
 - Email: renatofss16@gmail.com
 
-## seu nome aqui
-- GitHub: https://github.com/seuusuario
-- Email: email@gmail.com
+## Felipe Wolgran Bezerra de Oliveira
+- GitHub: https://github.com/wolgran
+- Email: wolgranf@gmail.com
 
 
 ## seu nome aqui
