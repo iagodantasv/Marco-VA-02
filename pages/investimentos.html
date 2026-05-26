@@ -1,1 +1,252 @@
-<h1>investimento</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investimentos — FinEdu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="../index.html" class="logo">Fin<span>Edu</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="organizacao-financeira.html">Organização</a></li>
+      <li><a href="investimentos.html" class="active">Investimentos</a></li>
+      <li><a href="ativos-internacionais.html">Ativos Int.</a></li>
+      <li><a href="comparativos.html">Comparativos</a></li>
+    </ul>
+    <button class="nav-cta">Começar agora</button>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <header class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-glow"></div>
+    <div class="page-hero-content">
+      <span class="badge">📈 Fazer crescer</span>
+      <h1>Investimentos<br><span>Para Todos</span></h1>
+      <p>Entenda os principais tipos de investimentos, como funcionam, seus riscos e retornos — do básico da renda fixa até as oportunidades da renda variável.</p>
+    </div>
+  </header>
+
+  <nav class="anchor-nav">
+    <a href="#intro">Introdução</a>
+    <a href="#renda-fixa">Renda Fixa</a>
+    <a href="#renda-variavel">Renda Variável</a>
+    <a href="#fiis">FIIs</a>
+    <a href="#perfis">Perfis</a>
+    <a href="#como-comecar">Como Começar</a>
+  </nav>
+
+  <main class="page-container">
+
+    <section class="page-section" id="intro">
+      <h2>O que são <span>investimentos?</span></h2>
+      <p>Investir é fazer o seu dinheiro trabalhar por você. Em vez de deixar o dinheiro parado (ou perdendo para a inflação), você aplica em produtos financeiros que geram rendimentos ao longo do tempo.</p>
+      <div class="cards-grid">
+        <div class="info-card">
+          <div class="info-card-icon">🏦</div>
+          <h3>Renda Fixa</h3>
+          <p>Retorno previsível, ideal para reserva de emergência e perfis mais conservadores.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">📉📈</div>
+          <h3>Renda Variável</h3>
+          <p>Maior potencial de ganho, mas com oscilações. Exige mais estudo e tolerância ao risco.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">🏠</div>
+          <h3>Fundos Imobiliários</h3>
+          <p>Invista em imóveis sem precisar comprar um. Receba aluguéis mensalmente.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">🌐</div>
+          <h3>Internacional</h3>
+          <p>Diversifique em moedas fortes e acesse as maiores empresas do mundo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="renda-fixa">
+      <h2>Renda <span>Fixa</span></h2>
+      <p>Na renda fixa, você empresta dinheiro ao governo ou a empresas e recebe de volta com juros. O retorno é previsível — por isso é chamada de "fixa".</p>
+      <div style="overflow-x:auto;">
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Quem emite</th>
+              <th>Rentabilidade</th>
+              <th>Liquidez</th>
+              <th>Tributação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tesouro Selic</td>
+              <td>Governo Federal</td>
+              <td>100% Selic</td>
+              <td>Diária</td>
+              <td>IR regressivo</td>
+            </tr>
+            <tr>
+              <td>Tesouro IPCA+</td>
+              <td>Governo Federal</td>
+              <td>IPCA + taxa fixa</td>
+              <td>Diária (marcação)</td>
+              <td>IR regressivo</td>
+            </tr>
+            <tr>
+              <td>CDB</td>
+              <td>Bancos</td>
+              <td>% do CDI (varia)</td>
+              <td>Depende do banco</td>
+              <td>IR regressivo</td>
+            </tr>
+            <tr>
+              <td>LCI / LCA</td>
+              <td>Bancos</td>
+              <td>% do CDI ou IPCA</td>
+              <td>Carência mínima</td>
+              <td>Isento de IR (PF)</td>
+            </tr>
+            <tr>
+              <td>Debêntures</td>
+              <td>Empresas</td>
+              <td>CDI+ ou IPCA+</td>
+              <td>Baixa</td>
+              <td>IR regressivo (ou isento se incentivadas)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="page-section" id="renda-variavel">
+      <h2>Renda <span>Variável</span></h2>
+      <p>Na renda variável, o retorno não é garantido — pode ser maior ou menor dependendo do mercado. Exige mais conhecimento, mas pode gerar retornos superiores no longo prazo.</p>
+      <div class="cards-grid">
+        <div class="info-card">
+          <div class="info-card-icon">📊</div>
+          <h3>Ações</h3>
+          <p>Você se torna sócio de empresas listadas na B3. Lucra com a valorização e com os dividendos pagos.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">📦</div>
+          <h3>ETFs</h3>
+          <p>Fundos que replicam um índice (como o Ibovespa). Diversificação automática com baixo custo.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">🌎</div>
+          <h3>BDRs</h3>
+          <p>Recibos de ações internacionais negociados na B3. Apple, Google e Amazon sem abrir conta no exterior.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">₿</div>
+          <h3>Criptomoedas</h3>
+          <p>Alta volatilidade e alto potencial. Bitcoin e Ethereum são os mais conhecidos e líquidos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="fiis">
+      <h2>Fundos de Investimento <span>Imobiliário (FIIs)</span></h2>
+      <p>Os FIIs permitem investir no mercado imobiliário com pequenos valores e receber rendimentos mensais isentos de IR para pessoas físicas — similar a receber aluguel sem os problemas de ser proprietário.</p>
+      <div class="cards-grid">
+        <div class="info-card">
+          <div class="info-card-icon">🏢</div>
+          <h3>FIIs de Tijolo</h3>
+          <p>Investem diretamente em imóveis físicos: shoppings, lajes corporativas, galpões logísticos.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">📄</div>
+          <h3>FIIs de Papel</h3>
+          <p>Aplicam em títulos de crédito imobiliário como CRI e LCI. Mais estáveis em cenários de alta de juros.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">🗂️</div>
+          <h3>FIIs Híbridos</h3>
+          <p>Combinam ativos físicos e títulos, equilibrando risco e retorno.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">💸</div>
+          <h3>Dividendos Isentos</h3>
+          <p>Os rendimentos distribuídos mensalmente são isentos de IR para pessoas físicas — grande vantagem tributária.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="perfis">
+      <h2>Qual é o seu <span>perfil de investidor?</span></h2>
+      <div style="overflow-x:auto;">
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Perfil</th>
+              <th>Característica</th>
+              <th>Produtos indicados</th>
+              <th>Renda Fixa</th>
+              <th>Renda Variável</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Conservador</td>
+              <td>Prioriza segurança</td>
+              <td>Tesouro Selic, CDB, LCI/LCA</td>
+              <td>80–100%</td>
+              <td>0–20%</td>
+            </tr>
+            <tr>
+              <td>Moderado</td>
+              <td>Equilíbrio risco/retorno</td>
+              <td>Renda fixa + FIIs + ETFs</td>
+              <td>50–70%</td>
+              <td>30–50%</td>
+            </tr>
+            <tr>
+              <td>Arrojado</td>
+              <td>Aceita alta volatilidade</td>
+              <td>Ações, ETFs, BDRs, cripto</td>
+              <td>10–30%</td>
+              <td>70–90%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="page-section" id="como-comecar">
+      <div class="highlight-box">
+        <h2>Como começar a investir?</h2>
+        <p>Primeiro, quite dívidas com juros altos. Depois, monte sua reserva de emergência em Tesouro Selic ou CDB com liquidez diária. Só então comece a investir em produtos de maior risco. O mais importante: comece agora, mesmo com pouco.</p>
+        <a href="comparativos.html" class="btn-primary" style="margin-top:8px;">Comparar produtos →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo">Fin<span>Edu</span></span>
+        <p>© 2026 FinanceEdu · Projeto de Educação Financeira</p>
+      </div>
+      <div class="footer-team">
+        <span class="footer-team-label">Criado por</span>
+        <div class="footer-avatars">
+          <span>Iago</span><span>Thiago</span><span>Kauê</span><span>Felipe</span><span>Renato</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/scripts.js"></script>
+</body>
+</html>

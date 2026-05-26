@@ -3,200 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Organização Financeira</title>
+  <title>Organização Financeira — FinEdu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
 </head>
-
 <body>
 
-  <header>
-    <h1>Organização Financeira</h1>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">Fin<span>Edu</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="organizacao-financeira.html" class="active">Organização</a></li>
+      <li><a href="investimentos.html">Investimentos</a></li>
+      <li><a href="ativos-internacionais.html">Ativos Int.</a></li>
+      <li><a href="comparativos.html">Comparativos</a></li>
+    </ul>
+    <button class="nav-cta">Começar agora</button>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
 
-    <p>
-      Aprenda a controlar gastos, planejar objetivos financeiros e desenvolver
-      hábitos saudáveis para conquistar estabilidade e segurança financeira.
-    </p>
-    <nav class="navbar">
-        <a href="../index.html" class="logo">Fin<span>Edu</span></a>
-        <ul class="nav-links">
-            <li><a href="../index.html" class="active">Home</a></li>
-            <li><a href="../pages/organizacao-financeira.html">Organização</a></li>
-            <li><a href="../pages/investimentos.html">Investimentos</a></li>
-            <li><a href="../pages/ativos-internacionais.html">Ativos Int.</a></li>
-            <li><a href="../pages/comparativos.html">Comparativos</a></li>
-        </ul>
-        <button class="nav-cta">Começar agora</button>
-        <button class="hamburger" id="hamburger">&#9776;</button>
-    </nav>
+  <!-- HERO DA PÁGINA -->
+  <header class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-glow"></div>
+    <div class="page-hero-content">
+      <span class="badge">💰 Fundamentos</span>
+      <h1>Organização<br><span>Financeira</span></h1>
+      <p>Aprenda a controlar gastos, planejar objetivos e desenvolver hábitos saudáveis para conquistar estabilidade e segurança financeira.</p>
+    </div>
   </header>
 
-  <nav>
+  <!-- NAV DE ÂNCORAS -->
+  <nav class="anchor-nav">
     <a href="#importancia">Importância</a>
-    <a href="#controle">Controle Financeiro</a>
+    <a href="#controle">Controle</a>
     <a href="#planejamento">Planejamento</a>
     <a href="#dicas">Dicas</a>
     <a href="#metas">Metas</a>
   </nav>
-  <hr>
 
-  <main class="container">
+  <main class="page-container">
 
-    <section id="importancia">
-
-      <h2 class="title">Por que a organização financeira é importante?</h2>
-
-      <p>
-        A organização financeira ajuda a manter o controle do dinheiro,
-        evita dívidas desnecessárias e permite alcançar objetivos pessoais
-        e profissionais com mais segurança.
-      </p>
-
-      <p style="margin-top:15px;">
-        Ter uma boa gestão financeira também reduz o estresse causado por
-        problemas econômicos e facilita o planejamento do futuro.
-      </p>
-
+    <!-- IMPORTÂNCIA -->
+    <section class="page-section" id="importancia">
+      <h2>Por que a organização financeira <span>é importante?</span></h2>
+      <p>A organização financeira ajuda a manter o controle do dinheiro, evita dívidas desnecessárias e permite alcançar objetivos pessoais e profissionais com mais segurança. Ter uma boa gestão financeira também reduz o estresse causado por problemas econômicos e facilita o planejamento do futuro.</p>
     </section>
 
-    <section id="controle">
-
-      <h2 class="title">Como controlar suas finanças</h2>
-
-      <div class="cards">
-
-        <div class="card">
+    <!-- CONTROLE -->
+    <section class="page-section" id="controle">
+      <h2>Como controlar suas <span>finanças</span></h2>
+      <div class="cards-grid">
+        <div class="info-card">
+          <div class="info-card-icon">📒</div>
           <h3>Anote seus gastos</h3>
-
-          <p>
-            Registrar despesas ajuda a entender para onde o dinheiro está indo
-            e identificar excessos.
-          </p>
+          <p>Registrar despesas ajuda a entender para onde o dinheiro está indo e identificar excessos.</p>
         </div>
-
-        <div class="card">
-          <h3>Separe gastos fixos e variáveis</h3>
-
-          <p>
-            Contas fixas e despesas variáveis devem ser analisadas separadamente
-            para melhor controle.
-          </p>
+        <div class="info-card">
+          <div class="info-card-icon">🔀</div>
+          <h3>Separe fixos e variáveis</h3>
+          <p>Contas fixas e despesas variáveis devem ser analisadas separadamente para melhor controle.</p>
         </div>
-
-        <div class="card">
+        <div class="info-card">
+          <div class="info-card-icon">📊</div>
           <h3>Crie um orçamento</h3>
-
-          <p>
-            Defina limites de gastos mensais para evitar desequilíbrio financeiro.
-          </p>
+          <p>Defina limites de gastos mensais para evitar desequilíbrio financeiro.</p>
         </div>
-
-        <div class="card">
+        <div class="info-card">
+          <div class="info-card-icon">🛑</div>
           <h3>Evite compras impulsivas</h3>
-
-          <p>
-            Planejar compras ajuda a economizar e manter a saúde financeira.
-          </p>
+          <p>Planejar compras ajuda a economizar e manter a saúde financeira.</p>
         </div>
-
       </div>
-
     </section>
 
-    <section id="planejamento">
-
-      <h2 class="title">Planejamento financeiro</h2>
-
-      <table>
-
-        <thead>
-          <tr>
-            <th>Objetivo</th>
-            <th>Prazo</th>
-            <th>Estratégia</th>
-          </tr>
-        </thead>
-
-        <tbody>
-
-          <tr>
-            <td>Reserva de emergência</td>
-            <td>Curto prazo</td>
-            <td>Guardar parte da renda mensalmente</td>
-          </tr>
-
-          <tr>
-            <td>Comprar um carro</td>
-            <td>Médio prazo</td>
-            <td>Planejar parcelas e economizar</td>
-          </tr>
-
-          <tr>
-            <td>Aposentadoria</td>
-            <td>Longo prazo</td>
-            <td>Investimentos e planejamento contínuo</td>
-          </tr>
-
-          <tr>
-            <td>Viagem internacional</td>
-            <td>Médio prazo</td>
-            <td>Controle de gastos e metas mensais</td>
-          </tr>
-
-        </tbody>
-
-      </table>
-
-    </section>
-
-    <section id="dicas">
-
-      <h2 class="title">Dicas para melhorar sua vida financeira</h2>
-
-      <div class="tips">
-
-        <ul>
-          <li>Monte uma reserva de emergência.</li>
-          <li>Evite usar crédito sem planejamento.</li>
-          <li>Tenha metas financeiras claras.</li>
-          <li>Invista em educação financeira.</li>
-          <li>Revise seus gastos mensalmente.</li>
-          <li>Priorize necessidades antes de desejos.</li>
-          <li>Aprenda sobre investimentos.</li>
-        </ul>
-
+    <!-- PLANEJAMENTO -->
+    <section class="page-section" id="planejamento">
+      <h2>Planejamento <span>financeiro</span></h2>
+      <div style="overflow-x:auto;">
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Objetivo</th>
+              <th>Prazo</th>
+              <th>Estratégia</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Reserva de emergência</td>
+              <td>Curto prazo</td>
+              <td>Guardar parte da renda mensalmente</td>
+            </tr>
+            <tr>
+              <td>Comprar um carro</td>
+              <td>Médio prazo</td>
+              <td>Planejar parcelas e economizar</td>
+            </tr>
+            <tr>
+              <td>Aposentadoria</td>
+              <td>Longo prazo</td>
+              <td>Investimentos e planejamento contínuo</td>
+            </tr>
+            <tr>
+              <td>Viagem internacional</td>
+              <td>Médio prazo</td>
+              <td>Controle de gastos e metas mensais</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
     </section>
 
-    <section id="metas">
+    <!-- DICAS -->
+    <section class="page-section" id="dicas">
+      <h2>Dicas para melhorar sua <span>vida financeira</span></h2>
+      <div class="tips-list">
+        <div class="tip-item"><div class="tip-dot"></div><p>Monte uma reserva de emergência equivalente a 3–6 meses de gastos.</p></div>
+        <div class="tip-item"><div class="tip-dot"></div><p>Evite usar crédito sem planejamento — os juros do cartão são altíssimos.</p></div>
+        <div class="tip-item"><div class="tip-dot"></div><p>Tenha metas financeiras claras de curto, médio e longo prazo.</p></div>
+        <div class="tip-item"><div class="tip-dot"></div><p>Invista em educação financeira continuamente.</p></div>
+        <div class="tip-item"><div class="tip-dot"></div><p>Revise seus gastos mensalmente e ajuste o orçamento quando necessário.</p></div>
+        <div class="tip-item"><div class="tip-dot"></div><p>Priorize necessidades antes de desejos.</p></div>
+        <div class="tip-item"><div class="tip-dot"></div><p>Aprenda sobre investimentos para fazer o dinheiro trabalhar por você.</p></div>
+      </div>
+    </section>
 
-      <div class="highlight">
-
+    <!-- METAS -->
+    <section class="page-section" id="metas">
+      <div class="highlight-box">
         <h2>Construindo um Futuro Financeiro Melhor</h2>
-
-        <p>
-          A organização financeira é o primeiro passo para conquistar liberdade
-          econômica, realizar sonhos e construir um patrimônio sólido ao longo
-          da vida.
-        </p>
-
-        <p style="margin-top:15px;">
-          Pequenas mudanças nos hábitos financeiros podem gerar grandes resultados
-          no futuro.
-        </p>
-
+        <p>A organização financeira é o primeiro passo para conquistar liberdade econômica, realizar sonhos e construir um patrimônio sólido ao longo da vida. Pequenas mudanças nos hábitos financeiros podem gerar grandes resultados no futuro.</p>
+        <a href="investimentos.html" class="btn-primary" style="margin-top:8px;">Próximo: Investimentos →</a>
       </div>
-
     </section>
 
   </main>
 
-  <footer>
-
-    <p>
-      © 2026 - Educação Financeira e Organização Financeira
-    </p>
-
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo">Fin<span>Edu</span></span>
+        <p>© 2026 FinanceEdu · Projeto de Educação Financeira</p>
+      </div>
+      <div class="footer-team">
+        <span class="footer-team-label">Criado por</span>
+        <div class="footer-avatars">
+          <span>Iago</span><span>Thiago</span><span>Kauê</span><span>Felipe</span><span>Renato</span>
+        </div>
+      </div>
+    </div>
   </footer>
 
+  <script src="../assets/js/scripts.js"></script>
 </body>
 </html>
