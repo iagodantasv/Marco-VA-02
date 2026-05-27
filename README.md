@@ -98,11 +98,11 @@ Garantindo boa visualização em diferentes tamanhos de tela.
 
 | Nome | Função |
 |------|---------|
-| coloque seu nome aqui | função aqui |
-| coloque seu nome aqui | função aqui |
-| Renato Firmino Santos da Silva | Desenvolvedor |
-| coloque seu nome aqui | função aqui |
-| coloque seu nome aqui | função aqui |
+| Iago | Pesquisa e conteúdo |
+| Kauê | função aqui | Desenvolvimento front-end |
+| Renato  | Desenvolvedor - Revisão de códigos |
+| Thiago | Interface e experiência |
+| Felipe | Comparativos e estrutura |
 
 ---
 
