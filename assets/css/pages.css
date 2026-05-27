@@ -611,20 +611,87 @@
     .calc-btn { width: 100%; text-align: center; }
     .styled-table { font-size: 0.8rem; }
     .styled-table th, .styled-table td { padding: 10px 12px; }
+
+    .about-section {
+        gap: 24px;
+    }
+
+    .about-section > div:first-child h2 {
+        font-size: 1.55rem;
+        line-height: 1.2;
+    }
+
+    .about-section > div:first-child p {
+        font-size: 0.92rem;
+        line-height: 1.65;
+    }
+
     .team-orbit {
-        min-height: 520px;
+        min-height: 430px;
+        border-radius: 22px;
     }
+
+    .market-rings {
+        width: 240px;
+        height: 240px;
+    }
+
+    .market-rings span:nth-child(1) {
+        width: 160px;
+        height: 160px;
+    }
+
+    .market-rings span:nth-child(2) {
+        width: 310px;
+        height: 310px;
+    }
+
+    .market-rings span:nth-child(3) {
+        width: 410px;
+        height: 410px;
+    }
+
     .team-bubble {
-        width: 96px;
-        height: 96px;
-        font-size: 0.88rem;
+        width: 86px;
+        height: 86px;
+        font-size: 0.78rem;
     }
-    .bubble-iago { top: 34px; left: 24px; }
-    .bubble-thiago { top: 116px; right: 24px; }
-    .bubble-kaue { top: 218px; left: 50%; }
-    .bubble-felipe { bottom: 114px; left: 28px; }
-    .bubble-renato { right: 28px; bottom: 28px; }
+
+    .team-bubble span {
+        padding-bottom: 10px;
+    }
+
+    .bubble-iago {
+        top: 34px;
+        left: 28px;
+    }
+
+    .bubble-thiago {
+        top: 98px;
+        right: 28px;
+    }
+
+    .bubble-kaue {
+        top: 178px;
+        left: calc(50% - 43px);
+    }
+
+    .bubble-felipe {
+        bottom: 86px;
+        left: 32px;
+    }
+
+    .bubble-renato {
+        right: 32px;
+        bottom: 34px;
+    }
+
     .team-detail {
         padding: 24px 20px;
+        border-radius: 16px;
+    }
+
+    .team-detail h3 {
+        font-size: 1.7rem;
     }
 }
