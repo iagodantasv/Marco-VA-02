@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quem somos — FinEdu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="../index.html" class="logo">Fin<span>Edu</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="organizacao-financeira.html">Organização</a></li>
+      <li><a href="investimentos.html">Investimentos</a></li>
+      <li><a href="ativos-internacionais.html">Ativos Int.</a></li>
+      <li><a href="comparativos.html">Comparativos</a></li>
+      <li><a href="quem-somos.html" class="active">Quem somos</a></li>
+    </ul>
+    <a href="#colaboradores" class="nav-cta">Conhecer equipe</a>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <header class="page-hero about-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-glow"></div>
+    <div class="page-hero-content">
+      <span class="badge">Equipe FinEdu</span>
+      <h1>Quem<br><span>somos</span></h1>
+      <p>Um projeto criado para transformar conceitos financeiros em conteúdo simples, visual e útil para quem quer tomar decisões melhores com o próprio dinheiro.</p>
+    </div>
+  </header>
+
+  <main class="page-container about-container" id="colaboradores">
+    <section class="page-section about-section">
+      <div>
+        <h2>Colaboradores do <span>projeto</span></h2>
+        <p>Clique em cada balão para conhecer a participação de cada pessoa na construção da plataforma.</p>
+      </div>
+
+      <div class="team-orbit" aria-label="Colaboradores do projeto">
+  <button class="team-bubble bubble-iago active" type="button"
+    data-name="Iago"
+    data-role="Pesquisa e conteúdo"
+    data-indicator="Reserva"
+    data-desc="Organiza os temas de educação financeira e ajuda a transformar conceitos complexos em explicações diretas, como uma boa reserva de emergência: simples, sólida e sempre por perto.">
+    <img src="../assets/img/iago.jpg" alt="Foto de Iago">
+    <span>Iago</span>
+  </button>
+
+  <button class="team-bubble bubble-thiago" type="button"
+    data-name="Thiago"
+    data-role="Interface e experiência"
+    data-indicator="Usabilidade"
+    data-desc="Cuida para que a navegação seja clara, bonita e fácil de entender, equilibrando visual e função como uma carteira bem diversificada.">
+    <img src="../assets/img/thiago.jpeg" alt="Foto de Thiago">
+    <span>Thiago</span>
+  </button>
+
+  <button class="team-bubble bubble-kaue" type="button"
+    data-name="Kauê"
+    data-role="Desenvolvimento front-end"
+    data-indicator="Código"
+    data-desc="Liga as partes da aplicação, ajusta interações e mantém a página pronta para rodar no GitHub Pages, com foco em desempenho e organização.">
+    <img src="../assets/img/kaue.jpeg" alt="Foto de Kauê">
+    <span>Kauê</span>
+  </button>
+
+  <button class="team-bubble bubble-felipe" type="button"
+    data-name="Felipe"
+    data-role="Comparativos e estrutura"
+    data-indicator="Análise"
+    data-desc="Ajuda a montar comparações e caminhos de leitura para que o usuário consiga avaliar opções financeiras com mais critério.">
+    <img src="../assets/img/felipe.jpg" alt="Foto de Felipe">
+    <span>Felipe</span>
+  </button>
+
+  <button class="team-bubble bubble-renato" type="button"
+    data-name="Renato"
+    data-role="Revisão e consistência"
+    data-indicator="Controle"
+    data-desc="Revisa conteúdo, fluxos e detalhes visuais para manter a plataforma consistente, como quem acompanha os indicadores de uma carteira ao longo do tempo.">
+    <img src="../assets/img/renato.jpg" alt="Foto de Renato">
+    <span>Renato</span>
+  </button>
+
+  <div class="market-rings" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+      <article class="team-detail" id="colaborador-detalhe" aria-live="polite">
+        <div class="card-header">
+          <span class="card-label">Colaborador</span>
+          <span class="card-badge up" data-team-indicator></span>
+        </div>
+        <h3 data-team-name></h3>
+        <strong data-team-role></strong>
+        <p data-team-desc></p>
+      </article>
+    </section>
+
+    <section class="page-section">
+      <div class="highlight-box">
+        <h2>Finanças também são trabalho em equipe</h2>
+        <p>Cada colaborador contribui com uma parte do projeto: pesquisa, design, código, comparativos e revisão. Juntos, esses pontos formam uma experiência mais completa para aprender sobre dinheiro.</p>
+        <a href="../index.html#topicos" class="btn-primary">Explorar conteúdo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo">Fin<span>Edu</span></span>
+        <p>© 2026 FinanceEdu · Projeto de Educação Financeira</p>
+      </div>
+      <div class="footer-team">
+        <span class="footer-team-label">Criado por</span>
+        <div class="footer-avatars">
+          <span>Iago</span><span>Thiago</span><span>Kauê</span><span>Felipe</span><span>Renato</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/scripts.js"></script>
+</body>
+</html>

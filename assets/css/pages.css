@@ -258,6 +258,185 @@
     max-width: 620px;
 }
 
+/* --- Quem somos --- */
+.about-hero {
+    min-height: 420px;
+}
+
+.about-container {
+    max-width: 1180px;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: minmax(360px, 1.2fr) minmax(280px, 0.9fr);
+    align-items: center;
+    gap: 32px;
+}
+
+.about-section > div:first-child {
+    grid-column: 1 / -1;
+    max-width: 720px;
+}
+
+.about-section > div:first-child p {
+    color: var(--text-muted);
+    font-size: 0.97rem;
+    line-height: 1.75;
+    margin-top: 14px;
+    max-width: 620px;
+}
+
+.team-orbit {
+    position: relative;
+    min-height: 460px;
+    border-radius: 28px;
+    border: 1px solid var(--border);
+    background:
+        radial-gradient(circle at 50% 50%, rgba(29,185,84,0.14), transparent 34%),
+        rgba(255,255,255,0.025);
+    overflow: hidden;
+}
+
+.market-rings,
+.market-rings span {
+    position: absolute;
+    inset: 50%;
+    border: 1px solid rgba(29,185,84,0.12);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.market-rings { width: 310px; height: 310px; }
+.market-rings span:nth-child(1) { width: 210px; height: 210px; }
+.market-rings span:nth-child(2) { width: 390px; height: 390px; }
+.market-rings span:nth-child(3) { width: 520px; height: 520px; opacity: 0.4; }
+
+.team-bubble {
+    position: absolute;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    border: 1px solid rgba(29,185,84,0.3);
+    background: rgba(17,17,17,0.88);
+    color: #fff;
+    font-family: var(--font-head);
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 18px 44px rgba(0,0,0,0.38);
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s, background 0.2s;
+    animation: bubbleFloat 6s ease-in-out infinite;
+    z-index: 2;
+    overflow: hidden;
+    padding: 0;
+}
+
+.team-bubble img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.82;
+    transition: opacity 0.2s, transform 0.25s;
+}
+
+.team-bubble span {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    place-items: end center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 14px;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.85);
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 58%);
+}
+
+.team-bubble:hover,
+.team-bubble.active {
+    border-color: var(--green);
+    background: rgba(29,185,84,0.16);
+    box-shadow: 0 0 34px rgba(29,185,84,0.24), 0 18px 44px rgba(0,0,0,0.42);
+}
+
+.team-bubble:hover img,
+.team-bubble.active img {
+    opacity: 1;
+    transform: scale(1.06);
+}
+
+.bubble-iago {
+    top: 54px;
+    left: 52px;
+    animation-delay: 0s;
+}
+
+.bubble-thiago {
+    top: 84px;
+    right: 42px;
+    animation-delay: 0.7s;
+}
+
+.bubble-kaue {
+    top: 184px;
+    left: 50%;
+    --bubble-x: -50%;
+    animation-delay: 1.1s;
+}
+
+.bubble-felipe {
+    bottom: 62px;
+    left: 74px;
+    animation-delay: 0.35s;
+}
+
+.bubble-renato {
+    right: 68px;
+    bottom: 54px;
+    animation-delay: 1.45s;
+}
+
+@keyframes bubbleFloat {
+    0%, 100% {
+        transform: translate(var(--bubble-x, 0), 0);
+    }
+
+    50% {
+        transform: translate(var(--bubble-x, 0), -12px);
+    }
+}
+
+.team-detail {
+    background: rgba(17,17,17,0.88);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.32);
+}
+
+.team-detail h3 {
+    font-family: var(--font-head);
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.team-detail strong {
+    display: block;
+    color: var(--green);
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+}
+
+.team-detail p {
+    color: var(--text-muted);
+    font-size: 0.96rem;
+    line-height: 1.75;
+}
+
 /* --- CALCULADORA --- */
 .calc-wrapper {
     background: var(--bg-card);
@@ -417,6 +596,12 @@
     .page-container { padding: 48px 28px; gap: 64px; }
     .highlight-box { padding: 32px 24px; }
     .calc-wrapper { padding: 24px 20px; }
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+    .team-orbit {
+        min-height: 420px;
+    }
 }
 @media (max-width: 640px) {
     .page-hero { padding: 100px 20px 40px; }
@@ -427,4 +612,20 @@
     .calc-btn { width: 100%; text-align: center; }
     .styled-table { font-size: 0.8rem; }
     .styled-table th, .styled-table td { padding: 10px 12px; }
+    .team-orbit {
+        min-height: 520px;
+    }
+    .team-bubble {
+        width: 96px;
+        height: 96px;
+        font-size: 0.88rem;
+    }
+    .bubble-iago { top: 34px; left: 24px; }
+    .bubble-thiago { top: 116px; right: 24px; }
+    .bubble-kaue { top: 218px; left: 50%; }
+    .bubble-felipe { bottom: 114px; left: 28px; }
+    .bubble-renato { right: 28px; bottom: 28px; }
+    .team-detail {
+        padding: 24px 20px;
+    }
 }

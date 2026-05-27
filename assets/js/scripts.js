@@ -55,7 +55,8 @@ function fmt(n, decimals = 2) {
 }
 
 /* --- Card Ibovespa --- */
-const BRAPI_TOKEN = "q3q7iqNwjSFGwM8GnhvkyL"; 
+// Token demonstrativo para GitHub Pages. Substitua por um token real apenas em ambiente privado.
+const BRAPI_TOKEN = "TOKEN_FICTICIO_GITHUB_PAGES";
 const IBOV_FALLBACK = {
     pontos: 137420,
     variacao: 0.87,
@@ -86,8 +87,8 @@ async function carregarIbovespa() {
     if (!elValor) return;
 
     try {
-        if (!BRAPI_TOKEN) {
-            throw new Error("Token da brapi nao configurado");
+        if (!BRAPI_TOKEN || BRAPI_TOKEN.includes("FICTICIO")) {
+            throw new Error("Token da brapi em modo demonstrativo");
         }
 
         const params = new URLSearchParams({
@@ -123,7 +124,7 @@ async function carregarIbovespa() {
         });
     } catch {
         atualizarCardIbovespa(IBOV_FALLBACK);
-        if (elBadge) elBadge.title = "Usando valor reserva. Configure BRAPI_TOKEN em assets/js/scripts.js.";
+        if (elBadge) elBadge.title = "Usando valor demonstrativo para publicacao no GitHub Pages.";
     }
 }
 
@@ -262,6 +263,36 @@ function initHamburger() {
 }
 
 // ------------------------------------
+// QUEM SOMOS
+// ------------------------------------
+function initQuemSomos() {
+    const painel = document.getElementById("colaborador-detalhe");
+    const botoes = document.querySelectorAll(".team-bubble");
+    if (!painel || !botoes.length) return;
+
+    const nome = painel.querySelector("[data-team-name]");
+    const papel = painel.querySelector("[data-team-role]");
+    const descricao = painel.querySelector("[data-team-desc]");
+    const indicador = painel.querySelector("[data-team-indicator]");
+
+    function selecionar(botao) {
+        botoes.forEach(item => item.classList.remove("active"));
+        botao.classList.add("active");
+
+        if (nome) nome.textContent = botao.dataset.name || "";
+        if (papel) papel.textContent = botao.dataset.role || "";
+        if (descricao) descricao.textContent = botao.dataset.desc || "";
+        if (indicador) indicador.textContent = botao.dataset.indicator || "";
+    }
+
+    botoes.forEach(botao => {
+        botao.addEventListener("click", () => selecionar(botao));
+    });
+
+    selecionar(botoes[0]);
+}
+
+// ------------------------------------
 // INIT
 // ------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
@@ -278,6 +309,7 @@ document.addEventListener("DOMContentLoaded", () => {
     exibirSelic();
     carregarIbovespa();
     carregarCambio();
+    initQuemSomos();
 
     // Atualiza câmbio a cada 60 segundos
     setInterval(carregarCambio, 60000);
