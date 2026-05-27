@@ -382,8 +382,7 @@
 
 .bubble-kaue {
     top: 184px;
-    left: 50%;
-    --bubble-x: -50%;
+    left: calc(50% - 56px);
     animation-delay: 1.1s;
 }
 
@@ -401,11 +400,11 @@
 
 @keyframes bubbleFloat {
     0%, 100% {
-        transform: translate(var(--bubble-x, 0), 0);
+        transform: translateY(0);
     }
 
     50% {
-        transform: translate(var(--bubble-x, 0), -12px);
+        transform: translateY(-12px);
     }
 }
 
